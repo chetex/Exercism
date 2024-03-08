@@ -18,7 +18,7 @@ def score(touching_power_pellet, touching_dot):
 :returns: Boolean value if Pac-Man wins
 """
 def lose(power_pellet_active, touching_ghost):
-    return power_pellet_active or touching_ghost
+    return touching_ghost and not power_pellet_active
 
 """ Trigger the victory event when all dots have been eaten. Define the win() function that takes three parameters
 :param has_eaten_all_dots: if Pac-Man has eaten all of the dots
