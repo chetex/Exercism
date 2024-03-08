@@ -9,11 +9,11 @@
 # - You can find links about good style and other resources
 #   for Bash in './README.md'. It came with this exercise.
 main () {
+    # -n True if length of string is non-zero
     if [[ -n $1 ]]; then
         echo "One for $1, one for me."
     else
         echo "One for you, one for me."
     fi
 }
-
 main "$@"
